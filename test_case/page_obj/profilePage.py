@@ -33,3 +33,22 @@ class Profile(Page):
 
     #确定
     submit_button_loc = ("xpath",".//input[@value='确定']")
+
+    def open_profile(self):
+        '''
+        打开个人资料页面 
+        '''
+        self.move_to_element(self.current_user_loc)
+        self.click(self.profile_loc)
+
+    def rell_name(self,name):
+        '''
+        输入真实姓名 
+        '''
+        self.send_keys(self.reall_name_loc,name)
+
+    def choose_sex(self):
+        '''
+        选择性别
+        '''
+        self.click(self.sex_male_loc)
