@@ -1,3 +1,4 @@
+import random
 from base import *
 from time import sleep
 
@@ -82,30 +83,30 @@ class ProfilePage(Page):
         self.click(self.locator01)
         sleep(2)
         elements = self.find_elements(self.position_pro_loc)
-        elements[3].click()
-        '''
-        for i in range(1,len(elements)):
-            elements[i].click()
-        '''
+        #elements[3].click()
+        
+        i = random.randint(1,len(elements))
+        elements[i].click()
+        
         #选择市
         self.click(self.locator02)
         sleep(2)
         elements = self.find_elements(self.position_city_loc)
-        elements[3].click()
-        '''
-        for i in range(1, len(elements)):
-            elements[i].click()
-        '''
+        #elements[3].click()
+        
+        i = random.randint(1,len(elements))
+        elements[i].click()
+        
 
         #选择县
         self.click(self.locator03)
         sleep(2)
         elements = self.find_elements(self.position_area_loc)
-        elements[1].click()
-        '''
-        for i in range(1, len(elements)):
-            elements[i].click()
-        '''
+        #elements[1].click()
+        
+        i = random.randint(1,len(elements))
+        elements[i].click()
+        
 
     def detail_address(self,address_text):
         '''
@@ -122,9 +123,9 @@ class ProfilePage(Page):
         self.click(self.edit_loc)
         sleep(2)
         #点击选择文件按钮
-        self.click(self.choose_file_loc)
-        sleep(3)
-        self.send_keys(self.path_file_loc,photo_path)
+        #self.click(self.choose_file_loc)
+        #sleep(3)
+        self.send_keys(self.choose_file_loc,photo_path)
         self.click(self.up_file_loc)
 
     def submit(self):
