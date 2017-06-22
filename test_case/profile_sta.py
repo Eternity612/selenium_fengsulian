@@ -1,8 +1,9 @@
 import sys,unittest,time
 sys.path.append("./page_obj")
+sys.path.append("./pub_code")
 
 from page_obj.base import *
-from page_obj.login_pub import Login_pub
+from pub_code.login_pub import Login_pub
 from page_obj.loginPage import url
 from page_obj.profilePage import ProfilePage
 

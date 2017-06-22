@@ -125,8 +125,8 @@ class ProfilePage(Page):
         #点击选择文件按钮
         #self.click(self.choose_file_loc)
         #sleep(3)
-        self.driver.find_element_by_xpath(".//input[@id='cropper_id']").send_keys(photo_path)
-        #self.send_keys(self.choose_file_loc,photo_path)
+        
+        self.send_keys(self.choose_file_loc,photo_path)
         self.click(self.up_file_loc)
 
     def submit(self):

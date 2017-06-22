@@ -80,7 +80,7 @@ class Page(object):
         element = self.find_element(locator)
         element.click()
 
-    def send_keys(self,locator,text):
+    def send_keys(self,locator,text,is_clear=False):
         '''
         发送文本，清空后输入
         Usage:
@@ -88,7 +88,8 @@ class Page(object):
         driver.send_keys(locator, text)
         '''
         element = self.find_element(locator)
-        element.clear()
+        if is_clear:element.clear()
+        
         element.send_keys(text)
 
     def is_text_in_element(self,locator,text,timeout=10):

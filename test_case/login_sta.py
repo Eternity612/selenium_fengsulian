@@ -1,16 +1,19 @@
 import sys,unittest,time
 sys.path.append("./page_obj")
+sys.path.append("./pub_code")
 
 import ddt
+from pub_code import read_excel
 from page_obj.base import *
 from page_obj.loginPage import LoginPage,url
 
-
-testData = [
+testData = ExcelUntil("sheet1",r"F:\My_Project\selenium_fengsulian\data\username_pwd.xlsx")
+'''testData = [
     {"username":"18675956153","pwd":"123456"},
     {"username":"","pwd":"123456xyf"},
     {"username":"18675956153","pwd":""}
 ]
+'''
 
 @ddt.ddt
 class Login_test(unittest.TestCase,LoginPage):
@@ -49,7 +52,7 @@ class Login_test(unittest.TestCase,LoginPage):
         """
         self.login_case(data["username"],data["pwd"])
         result = self.driver.is_login_sucess()
-        self.assertEqual(result, False)
+        self.assertEqual(data["test_result"],["expect_result"])
 
     '''
     @ddt.data(*testData)

@@ -1,4 +1,6 @@
-from .base import *
+import sys
+sys.path.append("./page_obj")
+from page_obj.base import *
 
 
 class Login_pub(Page):
