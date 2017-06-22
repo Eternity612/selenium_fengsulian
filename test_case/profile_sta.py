@@ -28,7 +28,7 @@ class Profile_test(unittest.TestCase,ProfilePage):
         self.driver.email('790577657@qq.com')
         self.driver.choose_locator()
         self.driver.detail_address('杭州市西湖区')
-        self.driver.upload_photo(r'C:\Users\hzhb\Desktop\11.png')
+        self.driver.upload_photo(r'E:\我的学习文档\selenium_fengsulian\data\cate.jpg')
         self.driver.submit()
 
     def tearDown(self):

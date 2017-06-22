@@ -30,3 +30,15 @@
 1497779289191	addons.xpi	WARN	Can't get modified time of E:\å¸¸ç¨å·¥å·\æµè§å¨\Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [nsIFile.lastModifiedTime]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: getModTime :: line 2163"  data: no] Stack trace: getModTime()@resource://gre/modules/addons/XPIProvider.jsm:2163 < syncWithDB()@resource://gre/modules/addons/XPIProvider.jsm:2199 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:2172 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3760 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2793 < callProvider()@resource://gre/modules/AddonManager.jsm:272 < _startProvider()@resource://gre/modules/AddonManager.jsm:756 < startup()@resource://gre/modules/AddonManager.jsm:938 < startup()@resource://gre/modules/AddonManager.jsm:3129 < observe()@resource://gre/components/addonManager.js:65
 1497779296174	Marionette	INFO	Listening on port 62044
 1497779315102	Marionette	INFO	New connections will no longer be accepted
+1498109729536	geckodriver	INFO	Listening on 127.0.0.1:11333
+1498109731610	mozprofile::profile	INFO	Using profile path C:\Users\hzhb\AppData\Local\Temp\rust_mozprofile.qOPKhjA40rIh
+1498109731626	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe
+1498109731718	geckodriver::marionette	INFO	Connecting to Marionette on localhost:11340
+1498109732800	Marionette	INFO	Listening on port 11340
+[NPAPI 24012] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2027
+1498109776782	geckodriver	INFO	Listening on 127.0.0.1:11442
+1498109778755	mozprofile::profile	INFO	Using profile path C:\Users\hzhb\AppData\Local\Temp\rust_mozprofile.2VaEVA2Oyg4d
+1498109778764	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe
+1498109778773	geckodriver::marionette	INFO	Connecting to Marionette on localhost:11448
+1498109779793	Marionette	INFO	Listening on port 11448
+[NPAPI 23924] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2027

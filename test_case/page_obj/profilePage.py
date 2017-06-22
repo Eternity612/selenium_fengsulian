@@ -33,7 +33,7 @@ class ProfilePage(Page):
     #头像
     edit_loc = ("css selector",".edit_pic.cropper")
     #选择文件
-    choose_file_loc = ("name","file")
+    choose_file_loc = ("xpath",".//input[@id='cropper_id']")
     path_file_loc = ("css selector","#cropper_id")
     up_file_loc = ("xpath",".//div[contains(text(),'确定上传')]")
 
@@ -125,7 +125,8 @@ class ProfilePage(Page):
         #点击选择文件按钮
         #self.click(self.choose_file_loc)
         #sleep(3)
-        self.send_keys(self.choose_file_loc,photo_path)
+        self.driver.find_element_by_xpath(".//input[@id='cropper_id']").send_keys(photo_path)
+        #self.send_keys(self.choose_file_loc,photo_path)
         self.click(self.up_file_loc)
 
     def submit(self):
