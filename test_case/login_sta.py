@@ -7,7 +7,7 @@ from pub_code import read_excel
 from page_obj.base import *
 from page_obj.loginPage import LoginPage,url
 
-testData = ExcelUntil("sheet1",r"F:\My_Project\selenium_fengsulian\data\username_pwd.xlsx")
+testData = read_excel.ExcelUntil("sheet1",r"F:\My_Project\selenium_fengsulian\data\username_pwd.xlsx")
 '''testData = [
     {"username":"18675956153","pwd":"123456"},
     {"username":"","pwd":"123456xyf"},
@@ -48,7 +48,7 @@ class Login_test(unittest.TestCase,LoginPage):
     @ddt.data(*testData)
     def test_login01(self,data):
         """
-        输入正确的帐号密码 
+        登录测试用例
         """
         self.login_case(data["username"],data["pwd"])
         result = self.driver.is_login_sucess()

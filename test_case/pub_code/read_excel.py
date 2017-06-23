@@ -2,7 +2,7 @@ import xlrd
 
 class ExcelUtil():
 
-    def __init__(self,excelPath,sheetName):
+    def __init__(self,sheetName,excelPath):
         self.data = xlrd.open_workbook(excelPath)
         self.table = self.data.sheet_by_name(sheetName)
 
@@ -16,14 +16,14 @@ class ExcelUtil():
         self.colNum = self.table.ncols
 
     def dict_data(self):
-        if self.rowNum <= 1:
+        if self.rowNum < 1:
             print("总行数小于1")
         else:
             r = []
-            j = 1
-            for i in range(self.rowNum-1):
+            #j = 1
+            for j in range(1,self.rowNum):
                 s = {}
-                #从第二行对应取value值
+                #从第二行取对应value值
                 values = self.table.row_values(j)
                 for x in range(self.colNum):
                     s[self.keys[x]] = values[x]
@@ -34,7 +34,7 @@ class ExcelUtil():
 
 if __name__ == "__main__":
     # 注意：此代码if以上的勿乱改，调用此方法只需修改两个参数，一个是excelPath存放xlsx的路径，另外一个是sheetName的值
-    filePath = "D:\\test\\web-project\\5ke\\testdata.xlsx"
+    filePath = r"F:\My_Project\selenium_fengsulian\data\username_pwd.xlsx"
     sheetName = "Sheet1"
-    data = ExcelUtil(filePath,sheetName)
+    data = ExcelUtil(sheetName,filePath)
     print(data.dict_data())

@@ -16,8 +16,6 @@ class Profile_test(unittest.TestCase,ProfilePage):
         self.driver = ProfilePage()
         self.driver.open(url)
 
-
-
     def test_profile01(self):
 
         # 登录

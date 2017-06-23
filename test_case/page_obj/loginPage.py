@@ -1,4 +1,4 @@
-from .base import *
+from base import *
 from time import  sleep
 from selenium import webdriver
 
