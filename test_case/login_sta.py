@@ -1,19 +1,17 @@
 import sys,unittest,time
 sys.path.append("./page_obj")
-sys.path.append("./pub_code")
+sys.path.append("./public/common")
 
 import ddt
-from pub_code import read_excel
-from page_obj.base import *
+from public.common.log1 import Log
+from public.common.read_excel import ExcelUntil
+from public.common.base import *
 from page_obj.loginPage import LoginPage,url
 
-testData = read_excel.ExcelUntil("sheet1",r"F:\My_Project\selenium_fengsulian\data\username_pwd.xlsx")
-'''testData = [
-    {"username":"18675956153","pwd":"123456"},
-    {"username":"","pwd":"123456xyf"},
-    {"username":"18675956153","pwd":""}
-]
-'''
+data = ExcelUntil("Sheet1",r"F:\My_Project\selenium_fengsulian\data\username_pwd.xlsx")
+testData = data.dict_data()
+
+#testData = [{'pwd': '123456xyf', 'expect_result': 'True', 'username': '18675956153'}]
 
 @ddt.ddt
 class Login_test(unittest.TestCase,LoginPage):
@@ -23,6 +21,8 @@ class Login_test(unittest.TestCase,LoginPage):
 
 
     def setUp(self):
+        #self.logger = Log()
+        #self.logger.info('############################### START ###############################')
         self.driver = LoginPage()
         self.driver.open(url)
 
@@ -46,49 +46,18 @@ class Login_test(unittest.TestCase,LoginPage):
         '''
 
     @ddt.data(*testData)
-    def test_login01(self,data):
-        """
-        登录测试用例
-        """
+    def test_login(self,data):
+        """登录测试用例"""
         self.login_case(data["username"],data["pwd"])
+        time.sleep(3)
         result = self.driver.is_login_sucess()
-        self.assertEqual(data["test_result"],["expect_result"])
+        #print(result)
+        self.assertEqual(str(result),data["expect_result"])
 
-    '''
-    @ddt.data(*testData)
-    def test_login02(self,data):
-        '''
-        #输入正确的帐号、错误的密码
-    '''
-        self.login_case(data["username"],data["pwd"])
-        print(data["username"], data["pwd"])
-        #po = LoginPage()
-        result = self.driver.is_text_in_element(self.username_err_loc, '账号密码不匹配,请重新输入!')
-        self.assertEqual(result,True)
-
-    @ddt.data(*testData)
-    def test_login03(self,data):
-        '''
-        #用户名为空
-    '''
-        self.login_case(data["username"],data["pwd"])
-        print(data["username"], data["pwd"])
-        result = self.driver.is_text_in_element(self.username_null_loc,"请输入手机号码")
-        self.assertEqual(result,True)
-
-    @ddt.data(*testData)
-    def test_login04(self,data):
-        '''
-        #密码为空
-    '''
-        self.login_case(data["username"],data["pwd"])
-        result = self.driver.is_text_in_element(self.pwd_null_loc,"请输入您的密码")
-        self.assertEqual(result,True)
-        print(data["username"], data["pwd"])
-        '''
 
     def tearDown(self):
         self.driver.quit()
+        #self.logger.info('###############################  End  ###############################')
 
 if __name__ == "__main__":
     unittest.main()

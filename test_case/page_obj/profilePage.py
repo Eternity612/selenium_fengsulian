@@ -1,5 +1,7 @@
-import random
-from base import *
+import random,sys
+
+sys.path.append("./public/common")
+from public.common.base import *
 from time import sleep
 
 class ProfilePage(Page):

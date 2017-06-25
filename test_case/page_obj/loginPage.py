@@ -1,4 +1,6 @@
-from base import *
+import sys
+sys.path.append("./public/common")
+from public.common.base import *
 from time import  sleep
 from selenium import webdriver
 
@@ -19,7 +21,8 @@ class LoginPage(Page):
     pwd_loc = ("id","password")
     #登录按钮
     login_button = ("xpath",".//input[@value='登录']")
-
+    #登录成功后的用户名
+    login_sucess_loc = ('css selector','.loginIn.fl>span')
     #用户名为空
     username_null_loc = ("xpath","html/body/div[4]")
     #密码为空
@@ -64,11 +67,13 @@ class LoginPage(Page):
     def is_login_sucess(self):
         '''
         判断是否获取到登录名称
-        '''
+         '''
         try:
-            text = self.find_element("css selector",".loginIn.fl>span").text
+            text = self.driver.find_element_by_css_selector(".loginIn.fl>span").text
+            #text = self.find_element("css selector",".loginIn.fl>span").text
             return True
         except:
+            #print(e)
             return False
 
 
@@ -86,3 +91,10 @@ class LoginPage(Page):
     def username_err(self):
         return self.find_element(self.username_err_loc).text
     '''
+if __name__ == "__main__":
+    dr = webdriver.Chrome()
+    dr.get('http://www.fengsulian.com/')
+    sleep(5)
+    A = LoginPage()
+    A.login('18675956153','123456xyf')
+    A.is_login_sucess()

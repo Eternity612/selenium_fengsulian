@@ -1,9 +1,9 @@
 import sys,unittest,time
 sys.path.append("./page_obj")
-sys.path.append("./pub_code")
+sys.path.append("./public/common")
 
-from page_obj.base import *
-from pub_code.login_pub import Login_pub
+from public.common.base import *
+from public.common.login_pub import Login_pub
 from page_obj.loginPage import url
 from page_obj.profilePage import ProfilePage
 
@@ -17,7 +17,7 @@ class Profile_test(unittest.TestCase,ProfilePage):
         self.driver.open(url)
 
     def test_profile01(self):
-
+        '''个人资料修改'''
         # 登录
         Login_pub(self.driver).login('18675956153', '123456xyf')
 

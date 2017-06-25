@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../UItestframework/.idea/UItestframework.iml" filepath="$PROJECT_DIR$/../UItestframework/.idea/UItestframework.iml" />
       <module fileurl="file://F:\My_Project\WeiBo\.idea\WeiBo.iml" filepath="F:\My_Project\WeiBo\.idea\WeiBo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/fengsulian.iml" filepath="$PROJECT_DIR$/.idea/fengsulian.iml" />
     </modules>

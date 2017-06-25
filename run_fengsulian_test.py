@@ -27,7 +27,7 @@ def sendemail(new_file):
       print("Mail sending failed,the reason is %s" % e)
 
 def findreport():
-    result_dir = r"F:\selenium_files\fengsulian\report"
+    result_dir = "F:\\My_Project\\selenium_fengsulian\\report\\testreport\\"
     lists = os.listdir(result_dir)
     lists.sort(key=lambda fn: os.path.getmtime(result_dir+ "\\" +fn))
            #if not os.path.isdir(result_dir+ "\\" +fn) else 0)
@@ -42,12 +42,12 @@ def findreport():
 
 if __name__ == "__main__":
     now = time.strftime("%Y-%m-%d-%H_%M_%S",time.localtime())
-    filename = ("./report/"+now+'result.html')
+    filename = ("./report/testreport/"+now+'result.html')
     fp = open(filename,'wb')
 
     runner = HTMLTestRunner.HTMLTestRunner(
     stream=fp,
-    title = u'微博登录测试报告',
+    title = u'风速链登录测试报告',
     description=u'用例执行情况')
     discover = unittest.defaultTestLoader.discover('./test_case',
                                                    pattern='*_sta.py')
