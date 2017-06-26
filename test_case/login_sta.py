@@ -3,12 +3,13 @@ sys.path.append("./page_obj")
 sys.path.append("./public/common")
 
 import ddt
-from public.common.log1 import Log
+#from public.common.log1 import Log
 from public.common.read_excel import ExcelUntil
+from public.common import screenshot
 from public.common.base import *
 from page_obj.loginPage import LoginPage,url
 
-data = ExcelUntil("Sheet1",r"F:\My_Project\selenium_fengsulian\data\username_pwd.xlsx")
+data = ExcelUntil("Sheet1",r"../data/username_pwd.xlsx")
 testData = data.dict_data()
 
 #testData = [{'pwd': '123456xyf', 'expect_result': 'True', 'username': '18675956153'}]
@@ -48,16 +49,21 @@ class Login_test(unittest.TestCase,LoginPage):
     @ddt.data(*testData)
     def test_login(self,data):
         """登录测试用例"""
-        self.login_case(data["username"],data["pwd"])
-        time.sleep(3)
-        result = self.driver.is_login_sucess()
-        #print(result)
-        self.assertEqual(str(result),data["expect_result"])
+        try:
+            self.login_case(data["username"],data["pwd"])
+            time.sleep(3)
+            result = self.driver.is_login_sucess()
+            #print(result)
+            self.assertEqual(str(result),data["expect_result"])
+        except Exception as e:
+            print(u"异常原因%s"%e)
+            nowtime = time.strftime("%Y%m%d.%H.%M.%S")
+            screenshot.screen_shot()
+            raise
 
+        def tearDown(self):
+            self.driver.quit()
+            # self.logger.info('###############################  End  ###############################')
 
-    def tearDown(self):
-        self.driver.quit()
-        #self.logger.info('###############################  End  ###############################')
-
-if __name__ == "__main__":
-    unittest.main()
+        if __name__ == "__main__":
+            unittest.main()

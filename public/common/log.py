@@ -4,7 +4,7 @@ import time
 
 class Logger(object):
 
-    def __init__(self,log_path="F:\\My_Project\\selenium_fengsulian\\report\\log\\"):
+    def __init__(self,log_path="G:\\selenium_files\\log\\"):
         '''
         log_path指定保存日志的文件路径，输出日志级别INFO
         '''
@@ -14,7 +14,7 @@ class Logger(object):
         self.logger.setLevel(logging.DEBUG)
 
         #输出格式
-        self.formatter = logging.Formatter('%(sactime)s-%(filename)s[line:%(lineno)d] \
+        self.formatter = logging.Formatter('%(asctime)s-%(filename)s[line:%(lineno)d] \
                         - %(funcName)s- %(levename)s:%(message)s')
 
         #指定导出log文件夹的路径地址
