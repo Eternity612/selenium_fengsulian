@@ -61,9 +61,9 @@ class Login_test(unittest.TestCase,LoginPage):
             screenshot.screen_shot()
             raise
 
-        def tearDown(self):
-            self.driver.quit()
-            # self.logger.info('###############################  End  ###############################')
+    def tearDown(self):
+        self.driver.quit()
+        # self.logger.info('###############################  End  ###############################')
 
-        if __name__ == "__main__":
-            unittest.main()
+if __name__ == "__main__":
+    unittest.main()

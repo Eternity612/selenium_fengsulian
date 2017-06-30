@@ -27,7 +27,7 @@ def sendemail(new_file):
       print("Mail sending failed,the reason is %s" % e)
 
 def findreport():
-    result_dir = "F:\\My_Project\\selenium_fengsulian\\report\\testreport\\"
+    result_dir = r"./report/testreport/"
     lists = os.listdir(result_dir)
     lists.sort(key=lambda fn: os.path.getmtime(result_dir+ "\\" +fn))
            #if not os.path.isdir(result_dir+ "\\" +fn) else 0)
