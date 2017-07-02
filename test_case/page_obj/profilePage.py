@@ -57,7 +57,7 @@ class ProfilePage(Page):
         '''
         输入真实姓名 
         '''
-        self.send_keys(self.reall_name_loc,name)
+        self.send_keys(self.reall_name_loc,name,is_clear=True)
 
     def choose_sex01(self):
         '''
@@ -75,7 +75,7 @@ class ProfilePage(Page):
         '''
         输入邮箱 
         '''
-        self.send_keys(self.email_loc,email_address)
+        self.send_keys(self.email_loc,email_address,is_clear=True)
 
     def choose_locator(self):
         '''
@@ -114,7 +114,7 @@ class ProfilePage(Page):
         '''
         详细地址 
         '''
-        self.send_keys(self.detail_address_loc,address_text)
+        self.send_keys(self.detail_address_loc,address_text,is_clear=True)
         sleep(2)
 
     def upload_photo(self,photo_path):

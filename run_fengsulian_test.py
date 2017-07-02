@@ -4,7 +4,6 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-
 def sendemail(new_file):
     _from  = "790577657@qq.com"
     _pwd   = "qwmzgnsieatxbbei"
@@ -36,10 +35,6 @@ def findreport():
     print(new_file)
     sendemail(new_file)
 
-
-
-
-
 if __name__ == "__main__":
     now = time.strftime("%Y-%m-%d-%H_%M_%S",time.localtime())
     filename = ("./report/testreport/"+now+'result.html')
@@ -47,12 +42,10 @@ if __name__ == "__main__":
 
     runner = HTMLTestRunner.HTMLTestRunner(
     stream=fp,
-    title = u'风速链登录测试报告',
+    title = u'风速链自动化测试测试报告',
     description=u'用例执行情况')
     discover = unittest.defaultTestLoader.discover('./test_case',
                                                    pattern='*_sta.py')
-
-
 
     runner.run(discover)
     fp.close()

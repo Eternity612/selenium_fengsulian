@@ -69,8 +69,8 @@ class LoginPage(Page):
         判断是否获取到登录名称
          '''
         try:
-            text = self.driver.find_element_by_css_selector(".loginIn.fl>span").text
-            #text = self.find_element("css selector",".loginIn.fl>span").text
+            #text = self.driver.find_element_by_css_selector(".loginIn.fl>span").text
+            text = self.find_element("css selector",".loginIn.fl>span").text
             return True
         except:
             #print(e)

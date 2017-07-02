@@ -29,6 +29,7 @@ class Profile_test(unittest.TestCase,ProfilePage):
         self.driver.detail_address('杭州市西湖区')
         self.driver.upload_photo(r'E:\我的学习文档\selenium_fengsulian\data\cate.jpg')
         self.driver.submit()
+        Page.screen_shot(self.driver)
 
     def tearDown(self):
         self.driver.quit()
