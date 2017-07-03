@@ -50,9 +50,11 @@ class Login_test(unittest.TestCase,LoginPage):
         """登录测试用例"""
         self.login_case(data["username"],data["pwd"])
         time.sleep(3)
+        Page.screen_shot(self.driver)
         result = self.driver.is_login_sucess()
         #print(result)
         Page.assertEqual(self.driver, str(result), data["expect_result"])
+        #用例执行完截图
         Page.screen_shot(self.driver)
 
     def tearDown(self):
