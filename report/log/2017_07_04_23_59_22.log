@@ -1,0 +1,20 @@
+2017-07-04 23:59:37,319-loginPage.py[line:42]-loginalert- INFO:定位用户名、密码的弹框:('css selector', '.notLogin>a')
+2017-07-04 23:59:41,408-loginPage.py[line:50]-input_username- INFO:定位用户名输入框：('id', 'username'),输入用户名:18675956153
+2017-07-04 23:59:41,551-loginPage.py[line:57]-input_pwd- INFO:定位密码输入框：('id', 'password'),输入密码:123456xyf
+2017-07-04 23:59:41,641-loginPage.py[line:64]-login_submit- INFO:点击登录按钮:('xpath', ".//input[@value='登录']")
+2017-07-05 00:00:03,931-loginPage.py[line:42]-loginalert- INFO:定位用户名、密码的弹框:('css selector', '.notLogin>a')
+2017-07-05 00:00:05,853-loginPage.py[line:50]-input_username- INFO:定位用户名输入框：('id', 'username'),输入用户名:
+2017-07-05 00:00:05,990-loginPage.py[line:57]-input_pwd- INFO:定位密码输入框：('id', 'password'),输入密码:123456xyf
+2017-07-05 00:00:06,099-loginPage.py[line:64]-login_submit- INFO:点击登录按钮:('xpath', ".//input[@value='登录']")
+2017-07-05 00:00:26,099-loginPage.py[line:42]-loginalert- INFO:定位用户名、密码的弹框:('css selector', '.notLogin>a')
+2017-07-05 00:00:30,455-loginPage.py[line:50]-input_username- INFO:定位用户名输入框：('id', 'username'),输入用户名:18675956153
+2017-07-05 00:00:30,598-loginPage.py[line:57]-input_pwd- INFO:定位密码输入框：('id', 'password'),输入密码:
+2017-07-05 00:00:30,689-loginPage.py[line:64]-login_submit- INFO:点击登录按钮:('xpath', ".//input[@value='登录']")
+2017-07-05 00:00:49,002-loginPage.py[line:42]-loginalert- INFO:定位用户名、密码的弹框:('css selector', '.notLogin>a')
+2017-07-05 00:00:52,116-loginPage.py[line:50]-input_username- INFO:定位用户名输入框：('id', 'username'),输入用户名:13838384382
+2017-07-05 00:00:52,279-loginPage.py[line:57]-input_pwd- INFO:定位密码输入框：('id', 'password'),输入密码:123456xyf
+2017-07-05 00:00:52,368-loginPage.py[line:64]-login_submit- INFO:点击登录按钮:('xpath', ".//input[@value='登录']")
+2017-07-05 00:01:11,455-loginPage.py[line:42]-loginalert- INFO:定位用户名、密码的弹框:('css selector', '.notLogin>a')
+2017-07-05 00:01:14,801-loginPage.py[line:50]-input_username- INFO:定位用户名输入框：('id', 'username'),输入用户名:1383838438222
+2017-07-05 00:01:14,947-loginPage.py[line:57]-input_pwd- INFO:定位密码输入框：('id', 'password'),输入密码:123456xyf
+2017-07-05 00:01:15,034-loginPage.py[line:64]-login_submit- INFO:点击登录按钮:('xpath', ".//input[@value='登录']")
