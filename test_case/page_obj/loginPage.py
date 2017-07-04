@@ -3,6 +3,9 @@ sys.path.append("./public/common")
 from public.common.base import *
 from time import  sleep
 from selenium import webdriver
+from public.common.log import Logger
+
+log = Logger().log()
 
 url= "http://www.fengsulian.com/"
 
@@ -14,7 +17,7 @@ class LoginPage(Page):
     #定位器，定位页面元素
 
     #登录框
-    login_alert = ("css selector",".notLogin>a")
+    login_alert = ('css selector','.notLogin>a')
     #用户名
     username_loc = ("id","username")
     #密码
@@ -35,24 +38,30 @@ class LoginPage(Page):
 
     def loginalert(self):
         self.click(self.login_alert)
+        #log.info("定位用户名、密码的弹框:{}".format(a=self.login_alert))
+        log.info("定位用户名、密码的弹框:{}".format(self.login_alert))
+        #print(self.login_alert)
 
     def input_username(self,username):
         '''
         输入帐号 
         '''
         self.send_keys(self.username_loc,username)
+        log.info("定位用户名输入框：{0},输入用户名:{1}".format(self.username_loc,username))
 
     def input_pwd(self,pwd):
         '''
         输入密码
         '''
         self.send_keys(self.pwd_loc,pwd)
+        log.info("定位密码输入框：{0},输入密码:{1}".format(self.pwd_loc,pwd))
 
     def login_submit(self):
         '''
         点击登录按钮
         '''
         self.click(self.login_button)
+        log.info("点击登录按钮:{}".format(self.login_button))
 
     #登录方法
     def login(self,username,pwd):

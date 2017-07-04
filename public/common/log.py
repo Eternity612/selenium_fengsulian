@@ -1,10 +1,10 @@
-import  logging
-import os.path
-import time
+import logging
+import os.path,time
+from config import globalparam
 
 class Logger(object):
 
-    def __init__(self,log_path="G:\\selenium_files\\log\\"):
+    def __init__(self,log_path=globalparam.log_path + '\\'):
         '''
         log_path指定保存日志的文件路径，输出日志级别INFO
         '''
@@ -14,8 +14,7 @@ class Logger(object):
         self.logger.setLevel(logging.DEBUG)
 
         #输出格式
-        self.formatter = logging.Formatter('%(asctime)s-%(filename)s[line:%(lineno)d] \
-                        - %(funcName)s- %(levename)s:%(message)s')
+        self.formatter = logging.Formatter('%(asctime)s-%(filename)s[line:%(lineno)d]-%(funcName)s- %(levelname)s:%(message)s')
 
         #指定导出log文件夹的路径地址
         self.log_path = log_path

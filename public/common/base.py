@@ -1,4 +1,5 @@
 import unittest,time
+from config import globalparam
 from selenium import webdriver
 from selenium.common.exceptions import * #导入所有的异常类
 from selenium.webdriver.support.select import Select
@@ -297,15 +298,17 @@ class Page(object):
         Select(element).select_by_visible_text(text)
 
     def assertEqual(self,arg1, arg2, msg=None):
+        '''断言失败，自动截图'''
         try:
             self.assertEqua(arg1,arg2)
         except:
             nowtime = time.strftime("%Y%m%d_%H.%M.%S")
-            self.driver.get_screenshot_as_file(r'F:\My_Project\selenium_fengsulian\report\image\断言失败%s.jpg'% nowtime)
+            self.driver.get_screenshot_as_file(globalparam.img_path +'\\'+ "断言失败%s.jpg" % nowtime)
 
     def screen_shot(self):
+        '''截图函数封装'''
         nowtime = time.strftime("%Y%m%d.%H.%M.%S")
-        self.driver.get_screenshot_as_file(r'F:\My_Project\selenium_fengsulian\report\image\用例执行完%s.jpg'% nowtime)
+        self.driver.get_screenshot_as_file(globalparam.img_path +'\\'+ "用例执行完%s.jpg" % nowtime)
 
 if __name__ == '__main__':
     # if下面的代码都是测试调试的代码，自测内容

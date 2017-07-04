@@ -1,6 +1,7 @@
 import HTMLTestRunner,time,os,unittest
 
 import smtplib
+from config import globalparam
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
@@ -26,7 +27,8 @@ def sendemail(new_file):
       print("Mail sending failed,the reason is %s" % e)
 
 def findreport():
-    result_dir = r"./report/testreport/"
+    #result_dir = r"./report/testreport/"
+    result_dir = globalparam.report_path + '\\'
     lists = os.listdir(result_dir)
     lists.sort(key=lambda fn: os.path.getmtime(result_dir+ "\\" +fn))
            #if not os.path.isdir(result_dir+ "\\" +fn) else 0)
@@ -37,14 +39,14 @@ def findreport():
 
 if __name__ == "__main__":
     now = time.strftime("%Y-%m-%d-%H_%M_%S",time.localtime())
-    filename = ("./report/testreport/"+now+'result.html')
+    filename = (globalparam.report_path + '\\' + now + 'result.html')
     fp = open(filename,'wb')
 
     runner = HTMLTestRunner.HTMLTestRunner(
     stream=fp,
     title = u'风速链自动化测试测试报告',
     description=u'用例执行情况')
-    discover = unittest.defaultTestLoader.discover('./test_case',
+    discover = unittest.defaultTestLoader.discover(globalparam.case_path,
                                                    pattern='*_sta.py')
 
     runner.run(discover)

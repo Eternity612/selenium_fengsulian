@@ -1,6 +1,6 @@
 import xlrd
 
-class ExcelUntil():
+class ExcelUtil():
 
     def __init__(self,sheetName,excelPath):
         self.data = xlrd.open_workbook(excelPath)
@@ -36,5 +36,5 @@ if __name__ == "__main__":
     # 注意：此代码if以上的勿乱改，调用此方法只需修改两个参数，一个是excelPath存放xlsx的路径，另外一个是sheetName的值
     filePath = r"F:\My_Project\selenium_fengsulian\data\username_pwd.xlsx"
     sheetName = "Sheet1"
-    data = ExcelUntil(sheetName,filePath)
+    data = ExcelUtil(sheetName,filePath)
     print(data.dict_data())

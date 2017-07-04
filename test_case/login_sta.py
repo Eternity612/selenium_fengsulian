@@ -4,11 +4,15 @@ sys.path.append("./public/common")
 
 import ddt
 #from public.common.log1 import Log
-from public.common.read_excel import ExcelUntil
+from config import globalparam
+from public.common.read_excel import ExcelUtil
 from public.common.base import Page
 from page_obj.loginPage import LoginPage,url
+from public.common.log import Logger
 
-data = ExcelUntil("Sheet1",r"F:\My_Project\selenium_fengsulian\data\username_pwd.xlsx")
+log = Logger().log()
+
+data = ExcelUtil("Sheet1",globalparam.data_path+ '\\' + "username_pwd.xlsx")
 testData = data.dict_data()
 
 #testData = [{'pwd': '123456xyf', 'expect_result': 'True', 'username': '18675956153'}]
@@ -54,8 +58,10 @@ class Login_test(unittest.TestCase,LoginPage):
         result = self.driver.is_login_sucess()
         #print(result)
         Page.assertEqual(self.driver, str(result), data["expect_result"])
+        log.info("执行断言函数：{0},{1}".format(str(result),data["expect_result"]))
         #用例执行完截图
         Page.screen_shot(self.driver)
+        log.info("用例执行完截图")
 
     def tearDown(self):
         self.driver.quit()

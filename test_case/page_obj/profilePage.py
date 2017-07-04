@@ -3,6 +3,9 @@ import random,sys
 sys.path.append("./public/common")
 from public.common.base import *
 from time import sleep
+from public.common.log import Logger
+
+log = Logger().log()
 
 class ProfilePage(Page):
     '''
@@ -51,19 +54,23 @@ class ProfilePage(Page):
         打开个人资料页面 
         '''
         self.move_to_element(self.current_user_loc)
+        log.info("鼠标移动到个人资料：{}".format(self.current_user_loc))
         self.click(self.profile_loc)
+        log.info("点击个人资料：{}".format(self.profile_loc))
 
     def real_name(self,name):
         '''
         输入真实姓名 
         '''
         self.send_keys(self.reall_name_loc,name,is_clear=True)
+        log.info("输入真实姓名：{0}".format(self.reall_name_loc))
 
     def choose_sex01(self):
         '''
         选择性别
         '''
         self.click(self.sex_male_loc)
+        log.info("选择性别：{}".format(self.sex_male_loc))
 
     def choose_sex02(self):
         '''
@@ -76,6 +83,7 @@ class ProfilePage(Page):
         输入邮箱 
         '''
         self.send_keys(self.email_loc,email_address,is_clear=True)
+        log.info("定位邮箱输入框：{0},输入邮箱：{1}".format(self.email_loc,email_address))
 
     def choose_locator(self):
         '''
@@ -89,6 +97,7 @@ class ProfilePage(Page):
         
         i = random.randint(1,len(elements))
         elements[i].click()
+        log.info("选择省：{}".format(elements[i].text))
         
         #选择市
         self.click(self.locator02)
