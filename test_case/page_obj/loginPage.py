@@ -39,7 +39,6 @@ class LoginPage(Page):
     def loginalert(self):
         self.click(self.login_alert)
         #log.info("定位用户名、密码的弹框:{}".format(a=self.login_alert))
-        log.info("定位用户名、密码的弹框:{}".format(self.login_alert))
         #print(self.login_alert)
 
     def input_username(self,username):
@@ -47,21 +46,18 @@ class LoginPage(Page):
         输入帐号 
         '''
         self.send_keys(self.username_loc,username)
-        log.info("定位用户名输入框：{0},输入用户名:{1}".format(self.username_loc,username))
 
     def input_pwd(self,pwd):
         '''
         输入密码
         '''
         self.send_keys(self.pwd_loc,pwd)
-        log.info("定位密码输入框：{0},输入密码:{1}".format(self.pwd_loc,pwd))
 
     def login_submit(self):
         '''
         点击登录按钮
         '''
         self.click(self.login_button)
-        log.info("点击登录按钮:{}".format(self.login_button))
 
     #登录方法
     def login(self,username,pwd):
@@ -69,9 +65,13 @@ class LoginPage(Page):
         登录方法  
         '''
         self.loginalert()
+        log.info("定位用户名、密码的弹框:{}".format(self.login_alert))
         self.input_username(username)
+        log.info("定位用户名输入框：{0},输入用户名:{1}".format(self.username_loc, username))
         self.input_pwd(pwd)
+        log.info("定位密码输入框：{0},输入密码:{1}".format(self.pwd_loc, pwd))
         self.login_submit()
+        log.info("点击登录按钮:{}".format(self.login_button))
 
     def is_login_sucess(self):
         '''

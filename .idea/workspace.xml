@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a7af179-5705-4b44-94e4-45d0cc56c2dc" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/config.ini" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/globalparam.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/common/readconfig.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_case/finddesign_sta.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test_case/page_obj/finddesignPage.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/username_pwd.xlsx" afterPath="$PROJECT_DIR$/data/username_pwd.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UItestframework/run.py" afterPath="$PROJECT_DIR$/../UItestframework/run.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/common/base.py" afterPath="$PROJECT_DIR$/public/common/base.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/common/log.py" afterPath="$PROJECT_DIR$/public/common/log.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/common/login_pub.py" afterPath="$PROJECT_DIR$/public/common/login_pub.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/common/read_excel.py" afterPath="$PROJECT_DIR$/public/common/read_excel.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_fengsulian_test.py" afterPath="$PROJECT_DIR$/run_fengsulian_test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_case/login_sta.py" afterPath="$PROJECT_DIR$/test_case/login_sta.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_case/page_obj/loginPage.py" afterPath="$PROJECT_DIR$/test_case/page_obj/loginPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_case/page_obj/profilePage.py" afterPath="$PROJECT_DIR$/test_case/page_obj/profilePage.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,20 +18,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/selenium_fengsulian$Unittests_for_finddesign_sta_Finddesign_test.coverage" NAME="Unittests for finddesign_sta.Finddesign_test Coverage Results" MODIFIED="1499266583841" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/selenium_fengsulian$loginPage.coverage" NAME="loginPage Coverage Results" MODIFIED="1498279613738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/page_obj" />
     <SUITE FILE_PATH="coverage/selenium_fengsulian$Unittests_in_login_sta_py.coverage" NAME="Unittests in login_sta.py Coverage Results" MODIFIED="1498227881394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/selenium_fengsulian$screenshot_pub.coverage" NAME="screenshot_pub Coverage Results" MODIFIED="1499008567197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/public/common" />
     <SUITE FILE_PATH="coverage/selenium_fengsulian$globalparam.coverage" NAME="globalparam Coverage Results" MODIFIED="1499171972914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
     <SUITE FILE_PATH="coverage/selenium_fengsulian$read_excel.coverage" NAME="read_excel Coverage Results" MODIFIED="1498281636464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/pub_code" />
+    <SUITE FILE_PATH="coverage/selenium_fengsulian$Unittests_in_finddesign_sta_py.coverage" NAME="Unittests in finddesign_sta.py Coverage Results" MODIFIED="1499348699423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/selenium_fengsulian$screen_shot.coverage" NAME="screen_shot Coverage Results" MODIFIED="1498407485906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/public/common" />
-    <SUITE FILE_PATH="coverage/selenium_fengsulian$login_sta.coverage" NAME="login_sta Coverage Results" MODIFIED="1499184324738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/selenium_fengsulian$login_sta.coverage" NAME="login_sta Coverage Results" MODIFIED="1499348499178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/selenium_fengsulian$log.coverage" NAME="log Coverage Results" MODIFIED="1498307417191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/pub_code" />
     <SUITE FILE_PATH="coverage/fengsulian$base.coverage" NAME="base Coverage Results" MODIFIED="1497160934344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/page_obj" />
     <SUITE FILE_PATH="coverage/selenium_fengsulian$assert_pub.coverage" NAME="assert_pub Coverage Results" MODIFIED="1499002835837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/public/common" />
     <SUITE FILE_PATH="coverage/selenium_fengsulian$run_fengsulian_test.coverage" NAME="run_fengsulian_test Coverage Results" MODIFIED="1499183507939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fengsulian$Unittests_in_login_sta_py.coverage" NAME="Unittests in login_sta.py Coverage Results" MODIFIED="1497781313880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
-    <SUITE FILE_PATH="coverage/selenium_fengsulian$profile_sta.coverage" NAME="profile_sta Coverage Results" MODIFIED="1499183334296" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/selenium_fengsulian$finddesignPage.coverage" NAME="finddesignPage Coverage Results" MODIFIED="1499265700213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/page_obj" />
+    <SUITE FILE_PATH="coverage/selenium_fengsulian$profile_sta.coverage" NAME="profile_sta Coverage Results" MODIFIED="1499348558183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/fengsulian$profilePage.coverage" NAME="profilePage Coverage Results" MODIFIED="1497781231042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/page_obj" />
+    <SUITE FILE_PATH="coverage/selenium_fengsulian$Unittests_for_finddesign_sta_Finddesign_test_setUP.coverage" NAME="Unittests for finddesign_sta.Finddesign_test.setUP Coverage Results" MODIFIED="1499349122776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/fengsulian$Unittests_in_profile_sta_py.coverage" NAME="Unittests in profile_sta.py Coverage Results" MODIFIED="1497801049988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/selenium_fengsulian$Unittests_in_profile_sta_py.coverage" NAME="Unittests in profile_sta.py Coverage Results" MODIFIED="1498328763692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/fengsulian$run_fengsulian_test.coverage" NAME="run_fengsulian_test Coverage Results" MODIFIED="1497278218787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -62,32 +58,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login_sta.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login_sta.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_case/login_sta.py">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profilePage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_case/page_obj/profilePage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1034">
+              <caret line="47" column="4" lean-forward="false" selection-start-line="47" selection-start-column="4" selection-end-line="49" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="finddesignPage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_case/page_obj/finddesignPage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="finddesign_sta.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_case/finddesign_sta.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile_sta.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_case/profile_sta.py">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="113">
-              <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+              <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_fengsulian_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_fengsulian_test.py">
+      <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/common/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loginPage.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_case/page_obj/loginPage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
-              <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="1496">
+              <caret line="75" column="13" lean-forward="false" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,6 +139,8 @@
       <find>text</find>
       <find>screen</find>
       <find>assert</find>
+      <find>elements</find>
+      <find>click</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,9 +175,11 @@
         <option value="$PROJECT_DIR$/public/common/log.py" />
         <option value="$PROJECT_DIR$/test_case/profile_sta.py" />
         <option value="$PROJECT_DIR$/public/common/login_pub.py" />
-        <option value="$PROJECT_DIR$/test_case/page_obj/loginPage.py" />
         <option value="$PROJECT_DIR$/test_case/page_obj/profilePage.py" />
+        <option value="$PROJECT_DIR$/test_case/page_obj/loginPage.py" />
         <option value="$PROJECT_DIR$/test_case/login_sta.py" />
+        <option value="$PROJECT_DIR$/test_case/page_obj/finddesignPage.py" />
+        <option value="$PROJECT_DIR$/test_case/finddesign_sta.py" />
       </list>
     </option>
   </component>
@@ -181,8 +213,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -317,6 +347,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,7 +391,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.login_sta">
+  <component name="RunManager" selected="Python tests.Unittests for finddesign_sta.Finddesign_test.setUP">
     <configuration default="false" name="login_sta" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -379,64 +411,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="run_fengsulian_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="F:\Python35\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="fengsulian" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_fengsulian_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="base" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="F:\Python35\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/public/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="fengsulian" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/public/common/base.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="globalparam" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="F:\Python35\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/config" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="fengsulian" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/config/globalparam.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="loginPage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="finddesignPage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -444,15 +419,66 @@
       </envs>
       <option name="SDK_HOME" value="F:\Python35\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/page_obj" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="fengsulian" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/page_obj/loginPage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/page_obj/finddesignPage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests for finddesign_sta.Finddesign_test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="F:\Python35\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="fengsulian" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;finddesign_sta.Finddesign_test&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in finddesign_sta.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="F:\Python35\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="fengsulian" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_case/finddesign_sta.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests for finddesign_sta.Finddesign_test.setUP" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="F:\Python35\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="fengsulian" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;finddesign_sta.Finddesign_test.setUP&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -626,18 +652,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.profile_sta" />
       <item index="1" class="java.lang.String" itemvalue="Python.login_sta" />
-      <item index="2" class="java.lang.String" itemvalue="Python.run_fengsulian_test" />
-      <item index="3" class="java.lang.String" itemvalue="Python.base" />
-      <item index="4" class="java.lang.String" itemvalue="Python.globalparam" />
-      <item index="5" class="java.lang.String" itemvalue="Python.loginPage" />
+      <item index="2" class="java.lang.String" itemvalue="Python.finddesignPage" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for finddesign_sta.Finddesign_test" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in finddesign_sta.py" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests for finddesign_sta.Finddesign_test.setUP" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.login_sta" />
-        <item index="1" class="java.lang.String" itemvalue="Python.run_fengsulian_test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.loginPage" />
-        <item index="3" class="java.lang.String" itemvalue="Python.globalparam" />
-        <item index="4" class="java.lang.String" itemvalue="Python.base" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for finddesign_sta.Finddesign_test.setUP" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in finddesign_sta.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python.login_sta" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for finddesign_sta.Finddesign_test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.finddesignPage" />
       </list>
     </recent_temporary>
   </component>
@@ -658,35 +684,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_profile_sta_py - 2017.06.24 at 15h 57m 55s.xml">
-      <configuration name="Unittests in profile_sta.py" configurationId="tests" />
+    <history-entry file="Unittests_for_finddesign_sta_Finddesign_test_setUP - 2017.07.06 at 21h 39m 46s.xml">
+      <configuration name="Unittests for finddesign_sta.Finddesign_test.setUP" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_profile_sta_py - 2017.06.24 at 15h 59m 00s.xml">
-      <configuration name="Unittests in profile_sta.py" configurationId="tests" />
+    <history-entry file="Unittests_for_finddesign_sta_Finddesign_test_setUP - 2017.07.06 at 21h 40m 09s.xml">
+      <configuration name="Unittests for finddesign_sta.Finddesign_test.setUP" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_profile_sta_py - 2017.06.24 at 15h 59m 56s.xml">
-      <configuration name="Unittests in profile_sta.py" configurationId="tests" />
+    <history-entry file="Unittests_for_finddesign_sta_Finddesign_test_setUP - 2017.07.06 at 21h 51m 56s.xml">
+      <configuration name="Unittests for finddesign_sta.Finddesign_test.setUP" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_profile_sta_py - 2017.06.24 at 16h 01m 08s.xml">
-      <configuration name="Unittests in profile_sta.py" configurationId="tests" />
+    <history-entry file="Unittests_for_finddesign_sta_Finddesign_test_setUP - 2017.07.06 at 21h 52m 13s.xml">
+      <configuration name="Unittests for finddesign_sta.Finddesign_test.setUP" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_profile_sta_py - 2017.06.24 at 16h 01m 46s.xml">
-      <configuration name="Unittests in profile_sta.py" configurationId="tests" />
+    <history-entry file="Unittests_in_finddesign_sta_py - 2017.07.05 at 23h 05m 48s.xml">
+      <configuration name="Unittests in finddesign_sta.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_profile_sta_py - 2017.06.24 at 16h 02m 30s.xml">
-      <configuration name="Unittests in profile_sta.py" configurationId="tests" />
+    <history-entry file="Unittests_in_finddesign_sta_py - 2017.07.05 at 23h 06m 32s.xml">
+      <configuration name="Unittests in finddesign_sta.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_profile_sta_py - 2017.06.25 at 02h 23m 14s.xml">
-      <configuration name="Unittests in profile_sta.py" configurationId="tests" />
+    <history-entry file="Unittests_in_finddesign_sta_py - 2017.07.06 at 19h 24m 53s.xml">
+      <configuration name="Unittests in finddesign_sta.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_profile_sta_py - 2017.06.25 at 02h 24m 18s.xml">
-      <configuration name="Unittests in profile_sta.py" configurationId="tests" />
+    <history-entry file="Unittests_in_finddesign_sta_py - 2017.07.06 at 21h 40m 20s.xml">
+      <configuration name="Unittests in finddesign_sta.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_profile_sta_py - 2017.06.25 at 02h 25m 20s.xml">
-      <configuration name="Unittests in profile_sta.py" configurationId="tests" />
+    <history-entry file="Unittests_in_finddesign_sta_py - 2017.07.06 at 21h 44m 47s.xml">
+      <configuration name="Unittests in finddesign_sta.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_profile_sta_py - 2017.06.25 at 02h 26m 37s.xml">
-      <configuration name="Unittests in profile_sta.py" configurationId="tests" />
+    <history-entry file="Unittests_in_finddesign_sta_py - 2017.07.06 at 21h 45m 01s.xml">
+      <configuration name="Unittests in finddesign_sta.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="1">
@@ -699,18 +725,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20272315" sideWeight="0.49285713" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20877458" sideWeight="0.49285713" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5163934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5032787" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32852563" sideWeight="0.5029542" order="7" side_tool="true" content_ui="tabs" x="1" y="265" width="1354" height="205" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.66721314" sideWeight="0.4970458" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.60819674" sideWeight="0.4970458" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26179776" sideWeight="0.50714284" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -796,8 +823,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_case/page_obj/base.py" />
-    <entry file="file://$PROJECT_DIR$/../WeiBo/test_case/page_obj/loginPage.py" />
     <entry file="file://$PROJECT_DIR$/../WeiBo/test_case/page_obj/base.py" />
     <entry file="file://$PROJECT_DIR$/../WeiBo/test_case/page_obj/base.py" />
     <entry file="file://$PROJECT_DIR$/../WeiBo/test_case/page_obj/loginPage.py" />
@@ -1021,9 +1046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="35" column="35" lean-forward="true" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-          <folding>
-            <element signature="e#15#29#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1032,23 +1054,13 @@
         <state relative-caret-position="132">
           <caret line="6" column="57" lean-forward="false" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="false" />
             <marker date="1499181107303" expanded="true" signature="88:1291" ph="..." />
             <marker date="1499181107303" expanded="true" signature="150:522" ph="..." />
             <marker date="1499181107303" expanded="true" signature="566:963" ph="..." />
             <marker date="1499181107303" expanded="true" signature="1007:1177" ph="..." />
             <marker date="1499181107303" expanded="true" signature="1197:1291" ph="..." />
             <marker date="1499181107303" expanded="true" signature="1318:1427" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/common/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="839">
-          <caret line="305" column="72" lean-forward="false" selection-start-line="305" selection-start-column="72" selection-end-line="305" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1061,42 +1073,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/profile_sta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/page_obj/profilePage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2178">
-          <caret line="99" column="33" lean-forward="false" selection-start-line="99" selection-start-column="33" selection-end-line="99" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run_fengsulian_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="25">
+          <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_case/page_obj/loginPage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+        <state relative-caret-position="751">
+          <caret line="81" column="77" lean-forward="true" selection-start-line="81" selection-start-column="77" selection-end-line="81" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/common/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="75" column="13" lean-forward="false" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/page_obj/profilePage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="47" column="4" lean-forward="false" selection-start-line="47" selection-start-column="4" selection-end-line="49" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_case/login_sta.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/profile_sta.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
-          <caret line="52" column="30" lean-forward="true" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+          <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/page_obj/finddesignPage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/finddesign_sta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
           <folding />
         </state>
       </provider>

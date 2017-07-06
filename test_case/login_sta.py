@@ -52,11 +52,12 @@ class Login_test(unittest.TestCase,LoginPage):
     @ddt.data(*testData)
     def test_login(self,data):
         """登录测试用例"""
-        self.login_case(data["username"],data["pwd"])
+        self.driver.login(data["username"],data["pwd"])
         time.sleep(3)
-        Page.screen_shot(self.driver)
+        #Page.screen_shot(self.driver)
         result = self.driver.is_login_sucess()
         #print(result)
+        Page.assertEqual(self.driver, str(result),data["expect_result"])
         Page.assertEqual(self.driver, str(result), data["expect_result"])
         log.info("执行断言函数：{0},{1}".format(str(result),data["expect_result"]))
         #用例执行完截图
