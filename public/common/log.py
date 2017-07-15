@@ -21,7 +21,7 @@ class Logger(object):
 
     def log_file(self,level=logging.INFO):
         '''log文件导出到本地文件'''
-        nowTime = time.strftime("%Y_%m_%d_%H_%M_%S")
+        nowTime = time.strftime("%Y_%m_%d_%H-%M-%S")
         log_path = os.path.join(os.path.dirname(os.getcwd()), self.log_path)
             
         log_name = log_path + nowTime + '.log'

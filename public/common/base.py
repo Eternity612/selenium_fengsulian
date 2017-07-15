@@ -300,14 +300,14 @@ class Page(object):
     def assertEqual(self,arg1, arg2, msg=None):
         '''断言失败，自动截图'''
         try:
-            self.assertEqua(arg1,arg2)
+            self.assertEqual(arg1,arg2)
         except:
-            nowtime = time.strftime("%Y%m%d_%H.%M.%S")
+            nowtime = time.strftime("%Y%m%d_%H-%M-%S")
             self.driver.get_screenshot_as_file(globalparam.img_path +'\\'+ "断言失败%s.jpg" % nowtime)
 
     def screen_shot(self):
         '''截图函数封装'''
-        nowtime = time.strftime("%Y%m%d.%H.%M.%S")
+        nowtime = time.strftime("%Y%m%d_%H-%M-%S")
         self.driver.get_screenshot_as_file(globalparam.img_path +'\\'+ "用例执行完%s.jpg" % nowtime)
 
 if __name__ == '__main__':
