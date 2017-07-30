@@ -11,13 +11,14 @@ from page_obj.finddesignPage import FinddesignPage
 
 log = Logger().log()
 
-class Finddesign_test(unittest.TestCase,FinddesignPage):
+class Finddesign_test(unittest.TestCase,FinddesignPage,Page):
     '''找设计功能测试'''
 
-    def setUp(self):
-        self.driver = FinddesignPage()
+    @classmethod
+    def setUpClass(cls):
+        cls.driver = FinddesignPage()
         #log.info("启动浏览器。")
-        self.driver.open(url)
+        cls.driver.open(url)
     '''
     def addcookie(self):
         cookies = [
@@ -47,9 +48,17 @@ class Finddesign_test(unittest.TestCase,FinddesignPage):
         #log.info("断言结束，用例执行完毕！")
         Page.screen_shot(self.driver)
 
+        self.driver.back()
+        self.driver.next_page()
 
-    def tearDown(self):
-        self.driver.quit()
+
+    def test_finddesign(self):
+        self.driver.back()
+
+        self.driver.click_enterprise()
+    @classmethod
+    def tearDownClass(cls):
+        cls.driver.quit()
         #log.info("关闭浏览器。")
 
 if __name__ == "__main__":

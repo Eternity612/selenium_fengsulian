@@ -4,6 +4,7 @@ from config import globalparam
 
 class Logger(object):
 
+
     def __init__(self,log_path=globalparam.log_path + '\\'):
         '''
         log_path指定保存日志的文件路径，输出日志级别INFO

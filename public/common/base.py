@@ -34,6 +34,7 @@ class Page(object):
     '''
     基于原生的selenium框架做了二次封装
     '''
+
     def __init__(self,driver):
         '''
         启动浏览器参数化，默认启动firefox

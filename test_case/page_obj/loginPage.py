@@ -33,8 +33,10 @@ class LoginPage(Page):
     #用户名、密码错误
     username_err_loc = ("xpath","html/body/div[4]")
 
+    '''
     def __init__(self):
-        self.driver = browser('chrome')
+        self.driver = browser("chrome")
+    '''
 
     def loginalert(self):
         self.click(self.login_alert)
