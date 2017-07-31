@@ -1,53 +1,60 @@
 import logging
-import os.path,time
+import os,time
 from config import globalparam
 
 class Logger(object):
 
+    log_path=globalparam.log_path + '\\'
 
-    def __init__(self,log_path=globalparam.log_path + '\\'):
+    def __init__(self):
         '''
-        log_path指定保存日志的文件路径，输出日志级别INFO
+        
         '''
 
-        #创建一个logger
+        # 文件的命名
+        self.logname = os.path.join(log_path,'%s.log'%time.strftime('%Y_%m_%d'))
         self.logger = logging.getLogger()
         self.logger.setLevel(logging.DEBUG)
 
         #输出格式
         self.formatter = logging.Formatter('%(asctime)s-%(filename)s[line:%(lineno)d]-%(funcName)s- %(levelname)s:%(message)s')
 
-        #指定导出log文件夹的路径地址
-        self.log_path = log_path
+    def __console(self, level, message):
+        
+        # 创建一个FileHandler，用于写到本地
+        #fh = logging.FileHandler(self.logname, 'a')  # 追加模式
+        fh = logging.FileHandler(self.logname, 'a', encoding='utf-8')  # 这个是python3的
 
-    def log_file(self,level=logging.INFO):
-        '''log文件导出到本地文件'''
-        nowTime = time.strftime("%Y_%m_%d_%H-%M-%S")
-        log_path = os.path.join(os.path.dirname(os.getcwd()), self.log_path)
-            
-        log_name = log_path + nowTime + '.log'
+        fh.setLevel(logging.DEBUG)
+        fh.setFormatter(self.formatter)
+        self.logger.addHandler(fh)
+        # 创建一个StreamHandler,用于输出到控制台
+        ch = logging.StreamHandler()
+        ch.setLevel(logging.DEBUG)
+        ch.setFormatter(self.formatter)
+        self.logger.addHandler(ch)
+        if level == 'info':
+            self.logger.info(message)
+        elif level == 'debug':
+            self.logger.debug(message)
+        elif level == 'warning':
+            self.logger.warning(message)
+        elif level == 'error':
+            self.logger.error(message)
+        # 这两行代码是为了避免日志输出重复问题
+        self.logger.removeHandler(ch)
+        self.logger.removeHandler(fh)
+        # 关闭打开的文件
+        fh.close()
+    def debug(self, message):
+        self.__console('debug', message)
+    def info(self, message):
+        self.__console('info', message)
+    def warning(self, message):
+        self.__console('warning', message)
+    def error(self, message):
+        self.__console('error', message)
 
-        fh = logging.FileHandler(log_name)
-        fh.setLevel(level)
-
-        fh.setFormatter(self.formatter)
-            
-        self.logger.addHandler(fh)
-
-        fh.close()
-
-    def console(self, level=logging.INFO):
-        '''定义console日志级别和格式'''
-        ch = logging.StreamHandler()
-        ch.setLevel(level)
-        ch.setFormatter(self.formatter)
-        self.logger.addHandler(ch)
-
-    def log(self):
-        '''输出log'''
-        self.log_file()
-        self.console()
-        return self.logger
 if __name__ == "__main__":
     log = Logger().log()
     log.info("打开浏览器")

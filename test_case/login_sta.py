@@ -54,16 +54,16 @@ class Login_test(unittest.TestCase):
     def test_login(self,data):
         """登录测试用例"""
         print(data["username"],data["pwd"])
-        self.login_case(data["username"],data["pwd"])
+        self.login.login(data["username"],data["pwd"])
         time.sleep(3)
         #Page.screen_shot(self.driver)
-        result = LoginPage().is_login_sucess()
+        result = self.login.is_login_sucess()
         #print(result)
-        Page.assertEqual(self.driver, str(result),data["expect_result"])
-        Page.assertEqual(self.driver, str(result), data["expect_result"])
+        Page.assertEqual(self, str(result),data["expect_result"])
+        Page.assertEqual(self, str(result), data["expect_result"])
         log.info("执行断言函数：{0},{1}".format(str(result),data["expect_result"]))
         #用例执行完截图
-        Page.screen_shot(self.driver)
+        Page.screen_shot(self)
         log.info("用例执行完截图")
 
     def tearDown(self):
