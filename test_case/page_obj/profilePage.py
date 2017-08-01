@@ -3,9 +3,9 @@ import random,sys
 sys.path.append("./public/common")
 from public.common.base import *
 from time import sleep
-from public.common.log import Logger
+from public.common.log import Log
 
-log = Logger().log()
+log = Log()
 
 class ProfilePage(Page):
     '''
@@ -45,9 +45,11 @@ class ProfilePage(Page):
     #确定
     submit_button_loc = ("xpath",".//input[@value='确定']")
 
+    '''
     def __init__(self):
-        '''初始化driver参数'''
+        初始化driver参数
         self.driver = browser('chrome')
+    '''
 
     def open_profile(self):
         '''
@@ -124,6 +126,7 @@ class ProfilePage(Page):
         详细地址 
         '''
         self.send_keys(self.detail_address_loc,address_text,is_clear=True)
+        log.info("定位地址输入框{0},输入详细地址{1}".format(self.detail_address_loc,address_text))
         sleep(2)
 
     def upload_photo(self,photo_path):
@@ -132,13 +135,17 @@ class ProfilePage(Page):
         '''
         #点击编辑按钮
         self.click(self.edit_loc)
+        log.info("定位并点击编辑按钮{}".format(self.edit_loc))
         sleep(2)
         #点击选择文件按钮
         #self.click(self.choose_file_loc)
         #sleep(3)
         
         self.send_keys(self.choose_file_loc,photo_path)
+        log.info("定位选择文件按钮{}".format(self.choose_file_loc))
         self.click(self.up_file_loc)
+        log.info("定位并点击确定上传按钮{}".format(self.up_file_loc))
 
     def submit(self):
         self.click(self.submit_button_loc)
+        log.info("定位并点击个人资料页的确定按钮{}".format(self.submit_button_loc))

@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a7af179-5705-4b44-94e4-45d0cc56c2dc" name="默认的" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report/log/2017-06-25.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report/log/2017_07_04_23_51_48.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report/log/2017_07_04_23_59_22.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/report/log/2017_07_05_00_05_25.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/username_pwd.xlsx" afterPath="$PROJECT_DIR$/data/username_pwd.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../UItestframework/run.py" afterPath="$PROJECT_DIR$/../UItestframework/run.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/common/base.py" afterPath="$PROJECT_DIR$/public/common/base.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/common/log.py" afterPath="$PROJECT_DIR$/public/common/log.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.ini" afterPath="$PROJECT_DIR$/config/config.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/common/login_pub.py" afterPath="$PROJECT_DIR$/public/common/login_pub.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_case/finddesign_sta.py" afterPath="$PROJECT_DIR$/test_case/finddesign_sta.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_case/geckodriver.log" afterPath="$PROJECT_DIR$/test_case/geckodriver.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_case/login_sta.py" afterPath="$PROJECT_DIR$/test_case/login_sta.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_case/page_obj/finddesignPage.py" afterPath="$PROJECT_DIR$/test_case/page_obj/finddesignPage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_case/page_obj/loginPage.py" afterPath="$PROJECT_DIR$/test_case/page_obj/loginPage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_case/page_obj/profilePage.py" afterPath="$PROJECT_DIR$/test_case/page_obj/profilePage.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_case/profile_sta.py" afterPath="$PROJECT_DIR$/test_case/profile_sta.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,14 +36,14 @@
     <SUITE FILE_PATH="coverage/selenium_fengsulian$Unittests_in_login_sta_py.coverage" NAME="Unittests in login_sta.py Coverage Results" MODIFIED="1501253238850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/selenium_fengsulian$screenshot_pub.coverage" NAME="screenshot_pub Coverage Results" MODIFIED="1499008567197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/public/common" />
     <SUITE FILE_PATH="coverage/selenium_fengsulian$read_excel.coverage" NAME="read_excel Coverage Results" MODIFIED="1498281636464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/pub_code" />
-    <SUITE FILE_PATH="coverage/selenium_fengsulian$Unittests_for_login_sta_Login_test.coverage" NAME="Unittests for login_sta.Login_test Coverage Results" MODIFIED="1501253649053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/selenium_fengsulian$Unittests_for_login_sta_Login_test.coverage" NAME="Unittests for login_sta.Login_test Coverage Results" MODIFIED="1501596940587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/selenium_fengsulian$Unittests_in_finddesign_sta_py.coverage" NAME="Unittests in finddesign_sta.py Coverage Results" MODIFIED="1500176727629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/selenium_fengsulian$Unittests_for_login_sta_Login_test_test_login.coverage" NAME="Unittests for login_sta.Login_test.test_login Coverage Results" MODIFIED="1501308936950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/selenium_fengsulian$screen_shot.coverage" NAME="screen_shot Coverage Results" MODIFIED="1498407485906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/public/common" />
     <SUITE FILE_PATH="coverage/selenium_fengsulian$log.coverage" NAME="log Coverage Results" MODIFIED="1498307417191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/pub_code" />
     <SUITE FILE_PATH="coverage/fengsulian$base.coverage" NAME="base Coverage Results" MODIFIED="1497160934344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/page_obj" />
     <SUITE FILE_PATH="coverage/fengsulian$Unittests_in_login_sta_py.coverage" NAME="Unittests in login_sta.py Coverage Results" MODIFIED="1497781313880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
-    <SUITE FILE_PATH="coverage/selenium_fengsulian$profile_sta.coverage" NAME="profile_sta Coverage Results" MODIFIED="1499348558183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/selenium_fengsulian$profile_sta.coverage" NAME="profile_sta Coverage Results" MODIFIED="1501598993725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/fengsulian$profilePage.coverage" NAME="profilePage Coverage Results" MODIFIED="1497781231042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/page_obj" />
     <SUITE FILE_PATH="coverage/fengsulian$run_fengsulian_test.coverage" NAME="run_fengsulian_test Coverage Results" MODIFIED="1497278218787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/fengsulian$login_sta.coverage" NAME="login_sta Coverage Results" MODIFIED="1497284422601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
@@ -72,18 +68,8 @@
       <file leaf-file-name="login_sta.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_case/login_sta.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/common/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+            <state relative-caret-position="-226">
+              <caret line="48" column="70" lean-forward="false" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -92,8 +78,38 @@
       <file leaf-file-name="loginPage.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_case/page_obj/loginPage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="638">
+              <caret line="29" column="52" lean-forward="false" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profilePage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_case/page_obj/profilePage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="830">
+              <caret line="146" column="36" lean-forward="false" selection-start-line="146" selection-start-column="36" selection-end-line="146" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile_sta.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_case/profile_sta.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="36" column="85" lean-forward="true" selection-start-line="36" selection-start-column="85" selection-end-line="36" selection-end-column="85" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_pub.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/common/login_pub.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1232">
+              <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -145,20 +161,20 @@
         <option value="$PROJECT_DIR$/public/common/assert_pub.py" />
         <option value="$PROJECT_DIR$/public/common/screen_shot.py" />
         <option value="$PROJECT_DIR$/public/common/screenshot_pub.py" />
-        <option value="$PROJECT_DIR$/config/config.ini" />
         <option value="$PROJECT_DIR$/public/common/read_excel.py" />
         <option value="$PROJECT_DIR$/../UItestframework/run.py" />
         <option value="$PROJECT_DIR$/config/globalparam.py" />
         <option value="$PROJECT_DIR$/run_fengsulian_test.py" />
-        <option value="$PROJECT_DIR$/test_case/profile_sta.py" />
-        <option value="$PROJECT_DIR$/public/common/login_pub.py" />
-        <option value="$PROJECT_DIR$/test_case/page_obj/profilePage.py" />
         <option value="$PROJECT_DIR$/public/common/log.py" />
-        <option value="$PROJECT_DIR$/test_case/finddesign_sta.py" />
         <option value="$PROJECT_DIR$/public/common/base.py" />
         <option value="$PROJECT_DIR$/test_case/page_obj/finddesignPage.py" />
         <option value="$PROJECT_DIR$/test_case/page_obj/loginPage.py" />
+        <option value="$PROJECT_DIR$/config/config.ini" />
         <option value="$PROJECT_DIR$/test_case/login_sta.py" />
+        <option value="$PROJECT_DIR$/test_case/finddesign_sta.py" />
+        <option value="$PROJECT_DIR$/public/common/login_pub.py" />
+        <option value="$PROJECT_DIR$/test_case/page_obj/profilePage.py" />
+        <option value="$PROJECT_DIR$/test_case/profile_sta.py" />
       </list>
     </option>
   </component>
@@ -191,6 +207,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -323,10 +341,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="selenium_fengsulian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="selenium_fengsulian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,7 +399,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for login_sta.Login_test.test_login">
+  <component name="RunManager" selected="Python.profile_sta">
     <configuration default="false" name="Unittests for login_sta.Login_test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -633,8 +663,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for login_sta.Login_test.test_login" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for login_sta.Login_test" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for login_sta.Login_test" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for login_sta.Login_test.test_login" />
         <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for login_sta.Login_test.login_case" />
         <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in login_sta.py" />
         <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for login_sta.Login_test.setUp" />
@@ -658,20 +688,20 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_login_sta_Login_test - 2017.07.28 at 22h 45m 14s.xml">
+    <history-entry file="Unittests_for_login_sta_Login_test - 2017.08.01 at 22h 10m 16s.xml">
       <configuration name="Unittests for login_sta.Login_test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_login_sta_Login_test - 2017.07.28 at 22h 54m 34s.xml">
+    <history-entry file="Unittests_for_login_sta_Login_test - 2017.08.01 at 22h 11m 03s.xml">
       <configuration name="Unittests for login_sta.Login_test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_login_sta_Login_test_login_case - 2017.07.28 at 22h 50m 47s.xml">
-      <configuration name="Unittests for login_sta.Login_test.login_case" configurationId="tests" />
+    <history-entry file="Unittests_for_login_sta_Login_test - 2017.08.01 at 22h 12m 05s.xml">
+      <configuration name="Unittests for login_sta.Login_test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_login_sta_Login_test_setUp - 2017.07.28 at 22h 44m 30s.xml">
-      <configuration name="Unittests for login_sta.Login_test.setUp" configurationId="tests" />
+    <history-entry file="Unittests_for_login_sta_Login_test - 2017.08.01 at 22h 15m 00s.xml">
+      <configuration name="Unittests for login_sta.Login_test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_login_sta_Login_test_test_login - 2017.07.28 at 22h 50m 23s.xml">
-      <configuration name="Unittests for login_sta.Login_test.test_login" configurationId="tests" />
+    <history-entry file="Unittests_for_login_sta_Login_test - 2017.08.01 at 22h 17m 19s.xml">
+      <configuration name="Unittests for login_sta.Login_test" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_for_login_sta_Login_test_test_login - 2017.07.28 at 22h 51m 21s.xml">
       <configuration name="Unittests for login_sta.Login_test.test_login" configurationId="tests" />
@@ -702,7 +732,7 @@
     <frame x="-7" y="0" width="1370" height="735" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23816794" sideWeight="0.49285713" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24198474" sideWeight="0.49285713" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5098361" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32852563" sideWeight="0.5029542" order="7" side_tool="true" content_ui="tabs" x="1" y="265" width="1354" height="205" />
@@ -710,8 +740,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.45081967" sideWeight="0.4970458" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.47920132" sideWeight="0.4970458" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26179776" sideWeight="0.50714284" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -976,13 +1006,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="46" lean-forward="false" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../UItestframework/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -1025,20 +1048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/profile_sta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/common/login_pub.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/common/log.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -1054,40 +1063,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/finddesign_sta.py">
+    <entry file="file://$PROJECT_DIR$/public/common/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="132">
+          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/page_obj/profilePage.py">
+    <entry file="file://$PROJECT_DIR$/config/config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="47" column="4" lean-forward="false" selection-start-line="47" selection-start-column="4" selection-end-line="49" selection-end-column="39" />
+        <state relative-caret-position="44">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_case/page_obj/loginPage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="638">
+          <caret line="29" column="52" lean-forward="false" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/finddesign_sta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_case/login_sta.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="56" column="13" lean-forward="true" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="23" />
+        <state relative-caret-position="-226">
+          <caret line="48" column="70" lean-forward="false" selection-start-line="48" selection-start-column="70" selection-end-line="48" selection-end-column="70" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/common/base.py">
+    <entry file="file://$PROJECT_DIR$/public/common/login_pub.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="40" column="11" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+        <state relative-caret-position="1232">
+          <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/page_obj/profilePage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="830">
+          <caret line="146" column="36" lean-forward="false" selection-start-line="146" selection-start-column="36" selection-end-line="146" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/profile_sta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="36" column="85" lean-forward="true" selection-start-line="36" selection-start-column="85" selection-end-line="36" selection-end-column="85" />
           <folding />
         </state>
       </provider>

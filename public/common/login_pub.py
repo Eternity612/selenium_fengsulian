@@ -1,9 +1,9 @@
 import sys
 sys.path.append("./public/common")
 from public.common.base import *
-from public.common.log import Logger
+from public.common.log import Log
 
-log = Logger().log()
+log = Log()
 
 
 class Login_pub(Page):
@@ -33,28 +33,28 @@ class Login_pub(Page):
         self.driver = driver
 
     def loginalert(self):
-        self.driver.click(self.login_alert)
+        self.click(self.login_alert)
         log.info("定位用户名、密码的弹框:{}".format(self.login_alert))
 
     def input_username(self,username):
         '''
         输入帐号 
         '''
-        self.driver.send_keys(self.username_loc,username)
+        self.send_keys(self.username_loc,username)
         log.info("定位用户名输入框：{0},输入用户名:{1}".format(self.username_loc, username))
 
     def input_pwd(self,pwd):
         '''
         输入密码
         '''
-        self.driver.send_keys(self.pwd_loc,pwd)
+        self.send_keys(self.pwd_loc,pwd)
         log.info("定位密码输入框：{0},输入密码:{1}".format(self.pwd_loc, pwd))
 
     def login_submit(self):
         '''
         点击登录按钮
         '''
-        self.driver.click(self.login_button)
+        self.click(self.login_button)
         log.info("点击登录按钮:{}".format(self.login_button))
 
     #登录方法

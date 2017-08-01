@@ -56,7 +56,7 @@ class Login_test(unittest.TestCase):
     @ddt.data(*testData)
     def test_login(self,data):
         """登录测试用例"""
-        print(data["username"],data["pwd"])
+        #print(data["username"],data["pwd"])
         self.login.login(data["username"],data["pwd"])
         time.sleep(3)
         #Page.screen_shot(self.driver)

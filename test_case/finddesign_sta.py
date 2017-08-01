@@ -4,20 +4,20 @@ sys.path.append("./public/common")
 
 from selenium import webdriver
 from public.common.base import *
-from public.common.log import Logger
+from public.common.log import Log
 from public.common.login_pub import Login_pub
 from page_obj.loginPage import url
 from page_obj.finddesignPage import FinddesignPage
 
-log = Logger().log()
+log = Log()
 
-class Finddesign_test(unittest.TestCase,FinddesignPage,Page):
+class Finddesign_test(unittest.TestCase):
     '''找设计功能测试'''
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = FinddesignPage()
-        #log.info("启动浏览器。")
+        cls.driver = browser("chrome")
+        log.info("启动浏览器。")
         cls.driver.open(url)
     '''
     def addcookie(self):
