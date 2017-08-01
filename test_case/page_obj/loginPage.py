@@ -3,9 +3,9 @@ sys.path.append("./public/common")
 from public.common.base import *
 from time import  sleep
 from selenium import webdriver
-from public.common.log import Logger
+from public.common.log import Log
 
-log = Logger().log()
+log = Log()
 
 url= "http://www.fengsulian.com/"
 

@@ -8,9 +8,9 @@ from config import globalparam
 from public.common.read_excel import ExcelUtil
 from public.common.base import Page,browser
 from page_obj.loginPage import LoginPage,url
-from public.common.log import Logger
+from public.common.log import Log
 
-log = Logger().log()
+log = Log()
 
 data = ExcelUtil("Sheet1",globalparam.data_path+ '\\' + "username_pwd.xlsx")
 testData = data.dict_data()
@@ -37,13 +37,14 @@ class Login_test(unittest.TestCase):
         '''
         #第1步：点击登录按钮，弹出登录名、密码输入框
         self.login.loginalert()
-        #第2步：输入用户名'''
+        #第2步：输入用户名
         self.login.input_username(username)
         #第3步，输入密码
         self.login.input_pwd(pwd)
         #第4步，点击登录按钮登录
         self.login.login_submit()
-        ''''#第5步：测试结果,判断是否登录成功
+        '''
+        #第5步：测试结果,判断是否登录成功
         result = self.driver.is_text_in_element(('css selector','.loginIn.fl>span'),'FSL_77340077')
         #第6步：期望结果
         expect_result = expect
