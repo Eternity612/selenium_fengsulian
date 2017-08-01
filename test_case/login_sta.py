@@ -31,6 +31,7 @@ class Login_test(unittest.TestCase):
         self.login = LoginPage(self.driver) #login参数是LoginPage的实例
         self.login.open(url)
 
+    """
     def login_case(self,username,pwd):
         '''
         登录用例的方法
@@ -50,6 +51,7 @@ class Login_test(unittest.TestCase):
         expect_result = expect
         self.assertEqual(result, expect_result)
         '''
+        """
 
     @ddt.data(*testData)
     def test_login(self,data):
