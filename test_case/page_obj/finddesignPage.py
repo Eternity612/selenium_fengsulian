@@ -1,10 +1,10 @@
 import sys,time,random
 sys.path.append("./public/common")
-from public.common.log import Logger
+from public.common.log import Log
 from public.common.base import *
 from selenium import webdriver
 
-log = Logger().log()
+log = Log()
 
 class FinddesignPage(Page):
     '''找设计页面操作'''
@@ -19,12 +19,12 @@ class FinddesignPage(Page):
 
     #页码
     page_num_loc = ("css selector",".lz_page>a")
-
+    '''
     def __init__(self):
-        '''初始化driver参数'''
+        初始化driver参数
         self.driver = browser('chrome')
 
-    '''
+    
     def __new__(cls, *args, **kwargs):
         if not hasattr(cls, 'instance'):
             orig = super(FinddesignPage,cls)
@@ -106,11 +106,25 @@ class FinddesignPage(Page):
             self.back()
 
         #点击下一页到第17、18页
-        for i in range(15,17):
+        for i in range(15,16):
             element = self.find_elements(self.page_num_loc)[9]
             element.click()
             log.info("点击下一页到第%d页。" % (i + 2))
             j = random.randint(0, 9)
+            elements = self.find_elements(self.enterprise_loc)[j]
+            t1 = elements.text
+            elements.click()
+            # print(j)
+            log.info("随机点击的企业是：" + t1)
+            t2 = self.find_element(self.new_enterpise_loc).text
+            Page.assertEqual(self, t1, t2)
+            log.info("断言随机点击的企业：%s" % t1)
+            self.back()
+
+            el = self.find_elements(self.page_num_loc)[6]
+            el.click()
+            log.info("点击下一页到第18页。")
+            j = random.randint(0, 7)
             elements = self.find_elements(self.enterprise_loc)[j]
             t1 = elements.text
             elements.click()

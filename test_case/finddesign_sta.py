@@ -16,9 +16,11 @@ class Finddesign_test(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
+        log.info("===================testStart===================")
         cls.driver = browser("chrome")
         log.info("启动浏览器。")
-        cls.driver.open(url)
+        cls.finddesign = FinddesignPage(cls.driver)
+        cls.finddesign.open(url)
     '''
     def addcookie(self):
         cookies = [
@@ -39,27 +41,28 @@ class Finddesign_test(unittest.TestCase):
         #登录
         #self.add_cookie()
         Login_pub(self.driver).login('18675956153', '123456xyf')
-        self.driver.click_finddesign()
-        self.driver.click_default()
-        self.driver.click_enterprise()
+        self.finddesign.click_finddesign()
+        self.finddesign.click_default()
+        self.finddesign.click_enterprise()
         #text1=self.driver.find_element_by_cs_selector(".person_des>h1").text
         #Page.assertEqual(self.driver,text1,self.driver.click_enterprise())
         #print(text1,self.driver.click_enterprise())
         #log.info("断言结束，用例执行完毕！")
-        Page.screen_shot(self.driver)
+        Page.screen_shot(self)
 
         self.driver.back()
-        self.driver.next_page()
+        self.finddesign.next_page()
 
 
     def test_finddesign(self):
         self.driver.back()
 
-        self.driver.click_enterprise()
+        self.finddesign.click_enterprise()
     @classmethod
     def tearDownClass(cls):
         cls.driver.quit()
-        #log.info("关闭浏览器。")
+        log.info("关闭浏览器。")
+        log.info("===================testEnd=====================")
 
 if __name__ == "__main__":
     unittest.main()
