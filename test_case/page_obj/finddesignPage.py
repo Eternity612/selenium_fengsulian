@@ -90,7 +90,7 @@ class FinddesignPage(Page):
         Page.assertEqual(self, t1, t2)
         log.info("断言随机点击的企业：%s" % t1)
         self.back()
-        self.view_card()
+        #self.view_card()
 
        #点击第3页、第4页
         for i in range(1, 3):
@@ -108,7 +108,7 @@ class FinddesignPage(Page):
             log.info("断言随机点击的企业：%s" % t1)
             self.back()
 
-            self.view_card()
+            #self.view_card()
         #点击下一页，从第5页到第16页
         for i in range(3,15):
             element = self.find_elements(self.page_num_loc)[9]
@@ -125,7 +125,7 @@ class FinddesignPage(Page):
             log.info("断言随机点击的企业：%s" % t1)
             self.back()
 
-            self.view_card()
+            #self.view_card()
 
         #点击下一页到第17、18页
         for i in range(15,16):
@@ -142,7 +142,7 @@ class FinddesignPage(Page):
             Page.assertEqual(self, t1, t2)
             log.info("断言随机点击的企业：%s" % t1)
             self.back()
-            self.view_card()
+            #self.view_card()
 
             el = self.find_elements(self.page_num_loc)[6]
             el.click()
@@ -156,8 +156,9 @@ class FinddesignPage(Page):
             t2 = self.find_element(self.new_enterpise_loc).text
             Page.assertEqual(self, t1, t2)
             log.info("断言随机点击的企业：%s" % t1)
+    '''
     def view_card(self):
-        '''查看名片，并分享'''
+        查看名片，并分享
         i = random.randint(0,9)
         element = self.find_elements(self.view_card_loc)[i]
         t1 = self.find_elements(self.enterprise_loc)[i].text
@@ -183,3 +184,4 @@ class FinddesignPage(Page):
         #点击分享
         eles.click(self.share_loc)
         log.info("点击分享。")
+        '''
