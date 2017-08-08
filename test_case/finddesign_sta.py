@@ -51,11 +51,14 @@ class Finddesign_test(unittest.TestCase):
         Page.screen_shot(self)
 
         self.driver.back()
+        self.finddesign.view_card()
         self.finddesign.next_page()
 
 
-    def test_finddesign(self):
+    def test_finddesign_2(self):
+        '''"找设计"页面测试_翻页'''
         self.driver.back()
+        self.finddesign.view_card()
 
         self.finddesign.click_enterprise()
     @classmethod
